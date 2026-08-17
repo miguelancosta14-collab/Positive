@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Unica+One&display=swap');
+
+
+*{
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: rgb(155, 129, 95)
+};
+
+body{
+    font-size: 20px;
+}
+
+button{
+    padding: 2vh 9vw;
+    cursor: pointer;
+    border-radius: 0.5vw;
+    font-weight: bolder;
+    font-size: 17px;
+    margin-top: 15vh;
+}
+
+p{
+    width: 400px;
+}
+
+#intro{
+    text-align: center; 
+    font-size: 70px;
+}
+
+.principal{
+    display: flex;
+    align-items: flex-start; 
+    gap: 90px;
+}
+

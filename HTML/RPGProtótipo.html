@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG</title>
+
+    <link rel="stylesheet" href="RPGProtótipo.css">
+</head>
+
+<body>
+    <div>
+        <header class="Titulo">
+            <div>
+                <p>Player</p> 
+                <p class="vid">100</p>
+            </div>
+            <div>
+                <p>NPC</p>  
+                <p class="vida" id="npc">80</p>
+            </div>
+        </header>
+    </div>
+    <div>
+        <button onclick="atk()">Atacar</button>
+        <button onclick="itens()">Itens</button>
+        <button onclick="menu()">Menu</button>
+        <button onclick="sair()">Sair</button>
+    </div>
+    <button id="reset" class="semclass" onclick="reset('npc', 80)">reiniciar</button>
+    <p id = 'mensagem'></p>
+
+    <script>
+        let dano = 20
+        function atk(){
+            let msg = document.getElementById('mensagem')
+            let elemento = document.getElementById('npc')
+            let vida = parseInt(elemento.textContent) 
+            novovalor = vida - dano
+
+            if (novovalor < 0){
+                return
+            }
+            document.getElementById('npc').innerText = novovalor;
+
+            if (novovalor === 0){
+                msg.textContent = 'Vitória!!'
+            }
+        }
+
+        function reset(iddotal, num){
+        let elemento = document.getElementById(iddotal)
+        elemento.innerText = num
+
+        let msg = document.getElementById('mensagem')
+        msg.textContent = ''
+    }
+    </script>
+</body>
+</html>
