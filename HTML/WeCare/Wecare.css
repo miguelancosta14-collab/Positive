@@ -51,8 +51,8 @@ a, button{
 
 
 header{
-
-    margin: 36px 144px 20px 70px;
+    padding: 0 0 0 0;
+    margin: 4vh 3vw 4vh 5vw;
 }
 
 
@@ -92,7 +92,7 @@ p{
     color: #848484;
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:720px){
     section{
         padding: 0;
         margin: 0;
@@ -103,21 +103,26 @@ p{
         display: none;
     }
     img{
+        position: static;
         display: block;
-        height: 40vh;
         width: 80vw;
-        margin: 10vh 4vw 0 10vw;
+        height: 40vh;
+        object-fit: contain; /* ou "cover" */
+        margin: 10vh auto;
     }
     
     .button-text{
-        margin: 0;
+        margin: auto;
+        width: 58vw;
+        height: 8vh;
     }
     .text{
-        margin: 0;}
-    h1{
-        font-size: 40px;}
-    h2{
-        font-size: 28px;}
-    p{
-        display: none;}
+        margin: auto;
+        position: static;
+        display: block;
+        width: 60vw;}/* ou "cover" */
+        
+    h1{font-size: 40px;}
+    h2{font-size: 28px;}
+    p{display: none;}
 }
