@@ -5,14 +5,9 @@
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
 }
-
 body{
     background-color: rgb(155, 129, 95);
-
-};
-
-body{
-    font-size: 20px;
+        font-size: 1.5vw;
 }
 
 button{
@@ -22,12 +17,16 @@ button{
     border-radius: 4vw;
     font-weight: bold;
     font-size: 1vw;
-    margin: 15vh auto
+    margin: 15vh auto;
+    position: absolute;
+    right: 38vw;
+    top: 70vh;
 }
 
 p{
-    margin-left: 10px;
-    width: 400px;
+    margin-left: 1vw;
+    width: 30vw;
+
 }
 
 #intro{
@@ -35,9 +34,9 @@ p{
     font-size: 5vw;
 }
 
-.principal{
+main{
     display: flex;
-    margin: 0 auto;
-    gap: 8vw;
+    margin: 0 10vw 0 10vw;
+    gap: 10vw;
 }
 

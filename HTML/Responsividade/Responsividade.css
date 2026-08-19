@@ -15,19 +15,19 @@ body{
 
 .text{
     display: inline-block;
-    vertical-align: top; /* Alinha o bloco corretamente no topo */
-    width: 50%;          /* Diminuído para não estourar junto com o .links */
-    padding-left: 5%;    /* Use porcentagem para não quebrar em telas médias */
+    vertical-align: top; 
+    width: 50%;        
+    padding-left: 5%;  
     margin-top: 10%;
 }
 
 .links{
     display: inline-block;
     background-color: rgba(93,93,125,0.16);
-    min-height: 100vh;   /* Troque height por min-height para acompanhar o crescimento */
-    width: 45%;          /* Use % em vez de vw para alinhar com o .text */
+    min-height: 100vh;   
+    width: 45%;          
     position: absolute;
-    right: 0;            /* Garante que ele fique colado na direita */
+    right: 0; 
     top: 0;
 }
 
@@ -120,7 +120,7 @@ a:active{
         display: block;
         width: 65vw;
         height: 70vh;
-        object-fit: contain; /* ou "cover" */
+        object-fit: contain; 
         margin: 0 auto;
     }
     header{
