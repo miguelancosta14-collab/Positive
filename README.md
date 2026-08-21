@@ -5,3 +5,5 @@
 Treinamento de:
 - <p>HTML - Intermediario</p>
 - <p>CSS - Intermediario</p>
+
+<img width="1360" height="767" alt="PImg" src="https://github.com/user-attachments/assets/f65f51cd-be2f-49e6-bfe3-16c6cb3c4bbd" />
